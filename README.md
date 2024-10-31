@@ -1,8 +1,8 @@
 # docker-containerization-and-orchestration
 
-## This project guide how to containerize a simple static HTML and CSS web application using Docker and deploy it to a Kubernetes cluster using kind. 
+#### This project guide how to containerize a simple static HTML and CSS web application using Docker and deploy it to a Kubernetes cluster using kind. 
 
-## By following this guide, users will learn how to create a Dockerfile, build a Docker image, push it to Docker Hub, set up a Kubernetes cluster using kind, deploy the Docker image to the cluster, and expose the application using a Kubernetes service.
+#### By following this guide, users will learn how to create a Dockerfile, build a Docker image, push it to Docker Hub, set up a Kubernetes cluster using kind, deploy the Docker image to the cluster, and expose the application using a Kubernetes service.
 
 #### Create a new directory: "mkdir nomolosapp"
 
