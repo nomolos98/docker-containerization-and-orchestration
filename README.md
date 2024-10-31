@@ -35,7 +35,9 @@ COPY style.css /usr/share/nginx/html
 #### Create a kind cluster:"kind create cluster"
 
 #### Create a Kubernetes deployment YAML file (deployment.yaml) specifying the image and desired replica count:
+
 Create a new file called `deployment.yaml` and open it in a text editor. Add the following content to the file:
+
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -56,11 +58,14 @@ spec:
         image: your-dockerhub-username/my-nginx-app
         ports:
         - containerPort: 80
+```
 
 #### Apply the deployment to the cluster: "kubectl apply -f deployment.yaml"
 
 #### Create a Kubernetes service in a YAML file (service.yaml) specifying the type as ClusterIP:
+
 Create a new file called `service.yaml` and open it in a text editor. Add the following content to the file:
+
 ```yaml
 apiVersion: v1
 kind: Service
@@ -74,6 +79,7 @@ spec:
       port: 80
       targetPort: 80
   type: ClusterIP
+```
 
 #### Port-forward to the service to access the application locally:"kubectl port-forward service/my-nginx-service 8080:80"
 
